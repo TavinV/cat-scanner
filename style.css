@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hammersmith+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Hammersmith One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    transition: all 0.2s ease;
+    overflow-x: hidden;
+}
+
+:root {
+    --dark: #111111;
+    --light: #F5F5FF;
+    --accent1: #ff9e1e;
+    --accent2: #d12822;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.logo {
+    color: var(--light);
+    font-size: 3vh;
+    letter-spacing: 4px;
+    transition: all 0.2s ease;
+}
+
+a {
+    color: var(--light);
+    text-decoration: none;
+    transition: 0.2 ease-in;
+}
+
+a:hover {
+    color: var(--accent2);
+    scale: 1.02;
+    content: "Hello";
+}
+
+nav {
+    z-index: 10000;
+    display: flex;
+    overflow-x: visible;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    background: var(--dark);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo-container {
+    position: absolute;
+    left: 25px;
+}
+
+.nav-container {
+    width: max-content;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+main {
+    padding-top: 50px;
+
+    margin-top: 8vh;
+    height: 100vh;
+    width: 100vw;
+    word-wrap: break-word;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: var(--light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    width: 100vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main .title {
+    font-size: 6vh;
+}
