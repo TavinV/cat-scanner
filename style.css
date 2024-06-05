@@ -105,3 +105,22 @@ main {
 main .title {
     font-size: 6vh;
 }
+
+.tutorial_cards {
+    background-color: aquamarine;
+    width: 80vw;
+    height: 30vh;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card {
+    overflow-y: hidden;
+    background-color: blue;
+}
+
+.main__img {
+    width: 30vh;
+}
